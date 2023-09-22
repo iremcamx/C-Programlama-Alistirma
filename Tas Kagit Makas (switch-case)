@@ -3,34 +3,34 @@
 #include <time.h> // Include time.h, not "time.h"
 
 int main() {
-    int bilg, siz, bilgpuan, sizpuan;
+    int bil, siz, bilpuan, sizpuan;
     bilgpuan = 0;
     sizpuan = 0;
 
     srand(time(NULL));
 
     while (1) {
-        bilg = 1 + rand() % 3;
+        bil = 1 + rand() % 3;
         printf("\nTas icin: 1, Kagit icin: 2, Makas icin: 3, Bitirmek icin: 4\n");
         scanf("%d", &siz);
 
         switch (siz) { // Fix the switch statement
             case 1:
-                if (bilg == 1) {
+                if (bil == 1) {
                     printf("Berabere\n");
-                } else if (bilg == 2) {
+                } else if (bil == 2) {
                     printf("Kazandiniz!\n");
                     sizpuan = sizpuan + 1;
                 } else {
                     printf("Kaybettiniz!\n");
-                    bilgpuan = bilgpuan + 1;
+                    bilpuan = bilpuan + 1;
                 }
                 break;
             case 2:
-                if (bilg == 1) {
+                if (bil == 1) {
                     printf("Kaybettiniz!\n");
-                    bilgpuan = bilgpuan + 1;
-                } else if (bilg == 2) {
+                    bilpuan = bilpuan + 1;
+                } else if (bil == 2) {
                     printf("Berabere\n");
                 } else {
                     printf("Kazandiniz!\n");
@@ -38,19 +38,19 @@ int main() {
                 }
                 break;
             case 3:
-                if (bilg == 1) {
+                if (bil == 1) {
                     printf("Kazandiniz!\n");
                     sizpuan = sizpuan + 1;
-                } else if (bilg == 2) {
+                } else if (bil == 2) {
                     printf("Kaybettiniz!\n");
-                    bilgpuan = bilgpuan + 1;
+                    bilpuan = bilpuan + 1;
                 } else {
                     printf("Berabere\n");
                 }
                 break;
             case 4:
                 printf("Oyun bitti. Sonuclar:\n");
-                printf("Bilgisayar puaný: %d\nSizin puanýnýz: %d\n", bilgpuan, sizpuan);
+                printf("Bilgisayar puani: %d\nSizin puaniniz: %d\n", bilpuan, sizpuan);
                 exit(0); // Exit the program
             default:
                 printf("Yanlis sayi girdiniz\n");
