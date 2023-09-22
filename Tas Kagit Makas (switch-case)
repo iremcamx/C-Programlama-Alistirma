@@ -14,7 +14,7 @@ int main() {
         printf("\nTas icin: 1, Kagit icin: 2, Makas icin: 3, Bitirmek icin: 4\n");
         scanf("%d", &siz);
 
-        switch (siz) { // Fix the switch statement
+        switch (siz) { 
             case 1:
                 if (bil == 1) {
                     printf("Berabere\n");
