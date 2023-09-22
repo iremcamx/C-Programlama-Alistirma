@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+    int islem;
+    int sayi1,sayi2;
+    float sonuc;
+printf("Hangi islemi yapmak istiyorsunuz? Toplama:1, Çıkarma:2, Bölme:3, Çarp:4\n");
+scanf("%d", &islem);
+printf("sayıları giriniz\n");
+scanf("%d%d", &sayi1, &sayi2);
+switch(islem){
+case 1:
+sonuc=sayi1+sayi2;
+break;
+case 2:
+sonuc=sayi1-sayi2;
+break;
+case3:
+sonuc=sayi1/sayi2;
+break;
+case 4:
+sonuc=sayi1*sayi2;
+break;
+}
+printf("\nSonucunuz:%.2f\n", sonuc);
+return 0;
+}
