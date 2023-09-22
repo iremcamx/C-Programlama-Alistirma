@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "time.h"
+
+int main(){
+int bilg, siz, bilgpuan, sizpuan;
+bilgpuan=0; sizpuan=0;
+srand(time(NULL));
+while(1){
+for (;;){
+    bilg = 1+rand()%3;
+    printf("\nTas icin:1, Kagit icin:2, Makas icin:3, Bitirmek icin:4\n");
+    scanf("%d", &siz);
+    if(bilg==1 && siz==1){
+        printf("Berabere \n");
+    }
+    else if (bilg==2 && siz==2){
+        printf("Berabere \n");
+    }
+    else if (bilg==3 && siz==3){
+        printf("Berabere \n");
+    }
+    else if (bilg==1 && siz==2){
+        printf("Kazandiniz!\n");
+        sizpuan=sizpuan+1;
+        printf("bilgisayar puani: %d\nsizin puaniniz: %d\n", bilgpuan, sizpuan);
+    }
+    else if(bilg==1 && siz==3){
+        printf("Kaybettiniz!\n");
+        bilgpuan=bilgpuan+1;
+        printf("bilgisayar puani: %d\nsizin puaniniz: %d\n", bilgpuan, sizpuan);
+    }
+    else if (bilg==2 && siz==1){
+         printf("Kaybettiniz!\n");
+          bilgpuan=bilgpuan+1;
+        printf("bilgisayar puani: %d\nsizin puaniniz: %d\n", bilgpuan, sizpuan);
+    }
+    else if (bilg==2 && siz==3){
+        printf("Kazandiniz!\n");
+        sizpuan=sizpuan+1;
+        printf("bilgisayar puani: %d\nsizin puaniniz: %d\n", bilgpuan, sizpuan);
+    }
+    else if (bilg==3 && siz==1){
+        printf("Kazandiniz!\n");
+       sizpuan=sizpuan+1;
+        printf("bilgisayar puani: %d\nsizin puaniniz: %d\n", bilgpuan, sizpuan);
+    }
+    else if (bilg==3 && siz==2){
+        printf("Kaybettiniz!\n");
+         bilgpuan=bilgpuan+1;
+        printf("bilgisayar puani: %d\nsizin puaniniz: %d\n", bilgpuan, sizpuan);
+    }
+
+ else if (siz==4){
+printf("Oyun sona erdi. Sonuclar\n Bilgisayar puani: %d, Sizin puaniniz: %d", bilgpuan, sizpuan);
+break;
+}
+
+
+
+}
+}
+
+}
