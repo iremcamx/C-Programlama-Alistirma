@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h> // Include time.h, not "time.h"
+#include <time.h> 
 
 int main() {
     int bil, siz, bilpuan, sizpuan;
